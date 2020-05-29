@@ -32,3 +32,8 @@ h6 {
 .brand-logo:hover {
   text-decoration: none;
 }
+.facebook-logo {
+  font-size: 1.6rem;
+  margin-top: 0.4rem;
+  color: var(--mainDark);
+}

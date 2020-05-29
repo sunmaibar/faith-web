@@ -1,5 +1,6 @@
 import React, { Component } from "react"
 import { Link } from "gatsby"
+import { FaFacebookSquare } from "react-icons/fa"
 
 export default class Navbar extends Component {
   state = {
@@ -42,6 +43,11 @@ export default class Navbar extends Component {
                 </li>
               )
             })}
+            <li className="nav-item ml-sm-5">
+              <a href="https://www.facebook.com/groups/1889224148060152">
+                <FaFacebookSquare className="facebook-logo" />
+              </a>
+            </li>
           </ul>
         </div>
       </nav>
