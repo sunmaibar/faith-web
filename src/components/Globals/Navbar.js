@@ -44,7 +44,10 @@ export default class Navbar extends Component {
               )
             })}
             <li className="nav-item ml-sm-5">
-              <a href="https://www.facebook.com/groups/1889224148060152">
+              <a
+                href="https://www.facebook.com/groups/1889224148060152"
+                target="__blank"
+              >
                 <FaFacebookSquare className="facebook-logo" />
               </a>
             </li>
