@@ -1,5 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
+import Title from "../Globals/Title"
 
 const Info = () => {
   return (
@@ -7,6 +8,7 @@ const Info = () => {
       <div className="container">
         <div className="row">
           <div className="col-10 col-sm-8 mx-auto text-center">
+            <Title title="商品特色" />
             <p className="lead text-muted mb-5 ">
               主賣德國原裝進口商品 絕無山寨仿冒品，只賣在台現貨
               提前售完才需預購。 ✔每週美國outlet連線，Michael Kors,Coach,Tory
@@ -15,6 +17,9 @@ const Info = () => {
               強烈建議將本社團設計優先通知，
               避免沒搶到好物，槌心肝脾肺就不好了。
             </p>
+            <Link to="/about">
+              <button className="btn btn-yellow">更多關於</button>
+            </Link>
           </div>
         </div>
       </div>

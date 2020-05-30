@@ -37,11 +37,29 @@ h6 {
   margin-top: 0.4rem;
   color: var(--mainDark);
 }
-.default-background {
+.default-background,
+.about-background {
   min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   background-position: center;
   background-size: cover;
+}
+
+.btn-yellow {
+  color: var(--mainYellow);
+  border-color: var(--mainYellow);
+}
+
+.btn-yellow:hover {
+  background: var(--mainYellow);
+  color: var(--mainWhite);
+}
+.footer {
+  background: var(--mainYellow);
+}
+.footer h3 {
+  color: var(--mainGrey);
+  font-size: 1rem;
 }
