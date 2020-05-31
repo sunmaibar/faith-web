@@ -58,7 +58,7 @@ export default class Menu extends Component {
                 })}
               </div>
             </div>
-            {/* items */}
+            {/* iteems */}
             <div className="row ">
               {this.state.productItems.map(({ node }) => {
                 return (
