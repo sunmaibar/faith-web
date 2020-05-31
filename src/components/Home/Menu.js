@@ -75,6 +75,9 @@ export default class Menu extends Component {
                       <h6 className="mb-0 py-3 text-yellow">
                         <small>${node.price}</small>
                       </h6>
+                      <a href={node.url.url} target="_blank">
+                        來去看看
+                      </a>
                     </div>
                   </div>
                 )

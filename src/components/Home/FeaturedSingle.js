@@ -12,7 +12,10 @@ export default function FeaturedSingle({ product }) {
         <div className="card-body text-center">
           <h6>{product.title}</h6>
           <h6>${product.price}</h6>
-          <button className="btn btn-yellow mt-3">馬上來看看</button>
+
+          <a href={product.url.url} target="_blank">
+            <button className="btn btn-yellow mt-3">馬上來看看</button>
+          </a>
         </div>
       </div>
     </div>
