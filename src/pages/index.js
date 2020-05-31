@@ -14,7 +14,7 @@ const IndexPage = ({ data }) => (
     <SEO title="Home" />
     <BackgroundSection
       img={data.img.childImageSharp.fluid}
-      title="請由FB粉絲團下訂"
+      title="購買商品-請由FB粉絲團下訂"
       styleClass="default-background"
     />
     <Info />
