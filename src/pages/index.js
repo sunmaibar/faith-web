@@ -45,7 +45,7 @@ export const query = graphql`
             description
           }
           picture {
-            fixed(width: 150, height: 150) {
+            fixed(width: 100, height: 100) {
               ...GatsbyContentfulFixed
             }
           }

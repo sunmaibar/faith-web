@@ -71,3 +71,22 @@ h6 {
   width: 100%;
   text-align: center;
 }
+.single-product {
+  width: 90vw;
+  max-width: 1170px;
+  margin: 6rem auto;
+}
+.single-title {
+  margin-top: 3rem;
+}
+.single-page {
+  height: 80vh;
+}
+
+@media screen and (min-width: 768px) {
+  .single-product {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 2rem;
+  }
+}

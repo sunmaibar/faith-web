@@ -1,6 +1,7 @@
 import React, { Component } from "react"
 import Title from "../Globals/Title"
 import Img from "gatsby-image"
+import { Link } from "gatsby"
 // import { node } from "prop-types"
 
 const getCategories = items => {
@@ -75,9 +76,7 @@ export default class Menu extends Component {
                       <h6 className="mb-0 py-3 text-yellow">
                         <small>${node.price}</small>
                       </h6>
-                      <a href={node.url.url} target="_blank">
-                        來去看看
-                      </a>
+                      <Link to={`/products/${node.slug}`}>更多細節</Link>
                     </div>
                   </div>
                 )
