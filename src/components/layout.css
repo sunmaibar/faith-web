@@ -63,3 +63,11 @@ h6 {
   color: var(--mainGrey);
   font-size: 1rem;
 }
+.featured-section {
+  background: var(--mainGrey);
+}
+.img-center {
+  margin-top: 1rem;
+  width: 100%;
+  text-align: center;
+}
