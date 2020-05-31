@@ -7,6 +7,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import BackgroundSection from "../components/Globals/BackgroundSection"
 import FeaturedProduct from "../components/Home/FeaturedProduct"
+import Contant from "../components/Home/Contant"
 
 const IndexPage = ({ data }) => (
   <Layout>
@@ -19,6 +20,7 @@ const IndexPage = ({ data }) => (
     <Info />
     <FeaturedProduct />
     <Menu items={data.menu} />
+    <Contant />
   </Layout>
 )
 export const query = graphql`
