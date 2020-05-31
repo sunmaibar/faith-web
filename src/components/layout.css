@@ -79,6 +79,9 @@ h6 {
 .single-title {
   margin-top: 3rem;
 }
+.contact {
+  background: var(--mainGrey) !important;
+}
 .single-page {
   height: 80vh;
 }
