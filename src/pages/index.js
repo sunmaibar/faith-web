@@ -1,6 +1,7 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 import Info from "../components/Home/Info"
+import Menu from "../components/Home/Menu"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -15,6 +16,7 @@ const IndexPage = ({ data }) => (
       styleClass="default-background"
     />
     <Info />
+    <Menu items={data.menu} />
   </Layout>
 )
 export const query = graphql`
@@ -25,6 +27,30 @@ export const query = graphql`
           ...GatsbyImageSharpFluid_tracedSVG
         }
       }
+    }
+    menu: allContentfulProducts(sort: { fields: id }) {
+      edges {
+        node {
+          category
+          price
+          slug
+          title
+          id
+          feature
+          description {
+            description
+          }
+          picture {
+            fixed(width: 150, height: 150) {
+              ...GatsbyContentfulFixed_tracedSVG
+            }
+          }
+          url {
+            url
+          }
+        }
+      }
+      totalCount
     }
   }
 `
