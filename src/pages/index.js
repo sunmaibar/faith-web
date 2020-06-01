@@ -32,7 +32,7 @@ export const query = graphql`
         }
       }
     }
-    menu: allContentfulProducts(sort: { fields: id }) {
+    menu: allContentfulProducts(sort: { fields: id, order: DESC }) {
       edges {
         node {
           category
