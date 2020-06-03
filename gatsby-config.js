@@ -3,11 +3,12 @@ require("dotenv").config({
 })
 module.exports = {
   siteMetadata: {
-    title: `國際閒妻良母`,
+    title: `國際閒妻良母官方網頁`,
     description: `主賣德國原裝進口商品
 絕無山寨仿冒品，只賣在台現貨
 提前售完才需預購。`,
     author: `@gatsbyjs`,
+    keywords: `國際閒妻良母官網`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
