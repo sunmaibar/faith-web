@@ -2,6 +2,7 @@ import React from "react"
 import { graphql, Link } from "gatsby"
 import Layout from "../components/layout"
 import Image from "gatsby-image"
+const ReactMarkdown = require("react-markdown")
 
 const ComponentName = ({
   data: {
@@ -27,7 +28,8 @@ const ComponentName = ({
           <article>
             <h6>{title}</h6>
             <h3 className="text-yellow">${price}</h3>
-            <p>{description}</p>
+            <ReactMarkdown source={description} />
+
             <div className="single-product-btn-gap">
               <Link to="/">
                 <button className="btn btn-yellow">回上一頁</button>
