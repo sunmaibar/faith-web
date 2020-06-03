@@ -67,6 +67,10 @@ function SEO({ description, lang, meta, title }) {
           name: `twitter:description`,
           content: metaDescription,
         },
+        {
+          name: `keywords`,
+          content: `國際閒妻涼母, 德國代購, 日本代購, 團媽,特價限定`,
+        },
       ].concat(meta)}
     />
   )
